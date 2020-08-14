@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CSS StyleSheet and Bootstrap css style sheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ce98d37f5d.js" crossorigin="anonymous"></script>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  <link rel="icon" href="favicon.ico">
+
+  <title>tinDog</title>
+</head>
+
+<body>
+
+  <section id="title" class="colored-section">
+
+    <!-- Nav Bar -->
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <!--expand class is used to adjust nav bar acc. to screen size  bg-light-:to make the bg. light -->
+        <!--navbar-light-: to change the style of bg.-->
+        <a class="navbar-brand" href="#">tinDog</a>
+        <!--when screen size reduces place of brand logo changes-:if place brand logo before button than it will appear on left if placed after than on right-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!--to give margin b/w links ml-auto(marginleft-auto) can also give mr-auto-->
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#cta">Action</a>
+                <a class="dropdown-item" href="#cta">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#cta">Something else here</a>
+              </div>
+            </li>
+            <!-- you can disable your links using Bootstrap documentation -->
+            <!-- and add these search button using Bootstrap documentation -->
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+        <!--to support toggler we have copied the  default script in the end of the body tag-->
+      </nav>
+
+
+
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div>
+            <!--this div is not necessary-->
+            <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
+            <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+            <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!--here we don't have to define class for 12 unit column(a single column which will take the entire space in the div)cause it will happen automatically as the "screen-size < medium"-->
+          <div>
+            <!--this div is not necessary-->
+            <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features" class="white-section">
+
+    <div class="row">
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>
+        <h3 class="features-title">Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h3 class="features-title">Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3  class="features-title">Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials" class="colored-section"> <!--color used in testimonials background is different than we have defined in
+    .colored-section class but we know that id's have greater priority over classes so color in id will get applied-->
+
+    <!--as we have set the data-ride to "false", data="interval" & data-pause are no longer required and it will be done mannually-->
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <!--slide class specifies that our testimonial(slides) in carousel will slide when changes-->
+      <div class="carousel-inner">
+        <!--this class will contain the content of the carousel's each slide-->
+        <div class="carousel-item active">
+          <!--also .active class should be added to any one of the slides(testimonial),otherwise carousel will not be visible also the testimonial which have the .active class will be considered as the first slide, if more than one slide has .active class than the last slide in html order will be considered as the first slide  -->
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <!--these are previous & next buttons for the slides-->
+      <!--these buttons will work only if the href in buttons is same as the "id" name of main parent(first div) cause href is used to know which carousel to target cause you can multiple carousel-->
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <!--ideally you should use a anchor tag as a html element to be a button but you can use other elements to like-:<h1> tag assign the role of that to be a button by using role="button"-->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+
+  <!-- Pricing -->
+  <section id="pricing" class="white-section">
+
+    <h2 class="Section-heading">A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="card-deck">
+      <!--.card-deck class is used to "wrap" all the cards-->
+      <div class="row">
+
+        <!-- First Card -->
+        <!--used grid layout for cards to make it responsive-->
+        <div class="pricing-column col-lg-4 col-md-6">
+          <!--used .price-column class because we wanted some space b/w the text above the card and the card,and both these are inside col-lg-4 div(watch it using pesticide)  -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="dog-category">Chihuahua</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-text">Free</h2>
+              <p>5 Matches Per Day</p>
+              <p>10 Messages Per Day</p>
+              <p>Unlimited App Usage</p>
+              <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <!--Second Card -->
+        <div class="pricing-column col-lg-4 col-md-6">
+          <!--.col-md-6 class used, so that first two card gets displayed together on ipad. otherwise(if phone) it will take 100% width-->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="dog-category">Labrador</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-text">$49 / mo</h2>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+              <!--.btn-block class is used cause we want button to take the whole width available inside the card-->
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4">
+          <!-- Third Card -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="dog-category">Mastiff</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-text">$99 / mo</h2>
+              <p>Pirority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <!--div for .col-lg-4-->
+      </div>
+      <!--div for .row-->
+    </div>
+    <!--div for .card-deck-->
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta" class="colored-section">
+
+    <h3 class="cta-heading big-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <button class="btn btn-lg btn-dark download-button" type="button"><i class="fab fa-apple"></i> Download</button>
+    <button class="btn btn-lg btn-light download-button" type="button"><i class="fab fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer" class="white-section">
+
+    <i class="footer-icon fab fa-facebook-f"></i>
+    <i class="footer-icon fab fa-twitter"></i>
+    <i class="footer-icon fab fa-instagram"></i>
+    <i class="footer-icon fas fa-envelope"></i>
+    <p>© Copyright 2018 TinDog</p>
+
+  </footer>
+
+
+</body>
+
+</html>

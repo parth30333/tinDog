@@ -1,0 +1,161 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center; /*Since text-align: center; is used "7" times in this cs file so we made it a part of the body and change
+  text-align: property specifically where needed*/
+}
+#title {
+  text-align: left;
+  /* height: 700px; */
+}
+h1, h2, h3, h4, h5 , h6 {
+  font-family: 'Montserrat-bold', sans-serif;
+  font-weight: bold;
+}
+p {
+  color: #8f8f8f;
+}
+
+          /*HEADING'S SECTION*/
+
+.big-heading {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.Section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+     /* Section's */
+.colored-section {
+  background: #ff4c68;
+  color: #fff;
+}
+.white-section {
+  background: #fff;
+}
+
+    /*TITLE and navbar SECTION*/
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+.navbar .navbar-brand { /*we have defined .navbar-brand class like that cause on just using .navbar-brand class solely color was not changing
+   cause in Bootstrap(since it is a Bootstrap class)this class is used more than one time so it was not possible to override the default color "black".
+    Now we have specified specially that we want to target the .navbar-brand class used in .navbar class by declaring ".navbar .navbar-brand" */
+  color: #fff;
+}
+.navbar .nav-item .nav-link {
+  color:#f1e9e3;
+}
+.navbar {
+  padding:0 0 4.5rem 0;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.navbar-brand { /*we have defined this class seperately cause in this we are not overriding any properties of deafult Bootstrap class .navbar-brand
+  but for changing color we have defined this class ".navbar .navbar-brand" cause we were overriding deafult color black that was defined in Boot*/
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+.download-button {
+  margin:5% 3% 5% 0;
+}
+.title-image {
+  width: 60%; /*60% of parent which is col-6 div*/
+  transform: rotate(25deg);
+  position: absolute;
+  left: 20%;
+}
+
+
+       /* features */
+
+#features {
+  padding:7% 15%;
+  position: relative;/*position:absolute; will take the title-image out of the HTML flow and some part of the image will get behind the features section, this concept only works cause we have defined position:relative; in features section */
+}
+.feature-box {
+  padding: 5%;
+}
+.features-title {
+  font-size: 1.9rem;
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #ff4c68;
+}
+     /* testimonial section */
+
+#testimonials {
+  background: #ef8172;
+}
+.testimonial-image {
+  width: 20%;
+  border-radius: 100%;
+  margin: 3%;
+}
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.carousel-item {
+  padding: 7% 15%; /*we have defined padding for items seperately cause when we were applying padding in id="#testimonials" than it also gets applied to the sliding buutons in carousel*/
+}
+    /* Press section */
+#press {
+  background: #ef8172;
+  padding-bottom:3%;
+}
+.press-logo {
+  width: 15%;
+  margin: 20px 20px;
+}
+
+        /* Pricing section */
+#pricing {
+  padding:7% 15%;
+}
+.pricing-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.dog-category{
+  font-size: 1.5rem;
+}
+.pricing-column {
+  padding:3% 2%;
+}
+ @media (max-width:1053px) and (max-width:999px) { /*we have used Second max-width cause the phone gets straighten up b/w 1053 px and 995 px before going below the buttons this is happening cause of the width defined for col-lg-6(used in title section  for image and buttons) in Bootstrap*/
+  #title {
+    text-align: center; /*do not delete text-align: center; from here since it is a media query and here this property is used for a special purpose*/
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+      /*CTA SECTION*/
+#cta {
+  padding:5% 15%;
+}
+.cta-heading{
+  font-size: 3.8rem;
+}
+                    /*FOOTER*/
+#footer {
+  padding:3% 13%;
+}
+.footer-icon {
+  padding:20px 10px;
+}
